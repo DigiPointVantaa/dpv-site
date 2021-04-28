@@ -1,3 +1,24 @@
+@import './variables.scss';
+
 .App {
-    
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .container-fluid {
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: {
+            left: 15px !important;
+            right: 15px !important;
+        }
+        background-color: lightblue;
+    }
+
+    .content {
+        display: flex;
+        
+    }
 }
