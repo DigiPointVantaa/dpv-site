@@ -1,9 +1,33 @@
-.NavBar {
-    margin: 5px;
+@import '../../variables.scss';
 
-    a {
-        background-color: aqua;
-        padding: 5px;
-        border-radius: 10px;   
+.NavBar {
+    height: 72px;
+    padding: 10px;
+    display: flex;
+    margin: {
+        bottom: 25px;
+    }
+    // flex-direction: column;
+    background-color: blue;
+    justify-content: space-between;
+    .App-logo {
+        max-height: 100%;
+    }
+    
+    ul {
+        background-color: white;
+        margin: 0;
+
+        font-size: x-large;
+
+        a {
+            padding: 5px;
+            border-radius: 10px;   
+            margin: 2px;
+
+            &:hover {
+                background-color: rgba(10, 255, 255, .5);
+            }
+        }
     }
 }

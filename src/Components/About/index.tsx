@@ -7,7 +7,7 @@ class About extends React.Component {
         return (
             <div className="About">
                 <div className="imagewrapper">
-                    <img src={image} alt="Nuori nainen käyttää kannettavaa tietokonetta keittiönpöydän äärellä, taustalla nuori mies" />
+                    <img src={image} alt="Nuori nainen käyttää kannettavaa tietokonetta keittiönpöydän äärellä, taustalla nuori mies" className="responsive" />
                 </div>
                 <p className="standfirst">
                     DigiPoint-hankkeen tavoitteena on kehittää työnhakijoille sujuvia väyliä digialojen työpaikkoihin ja koulutukseen. Hanke vahvistaa työnhakijoiden sosiaalisia taitoja ja elämänhallintaa sekä kehittää joustavia opintomahdollisuuksia korkeakouluissa. Hanke tuottaa osaavaa ja koulutettua työvoimaa työvoimapulasta kärsiville teknologia-aloille.</p><p>
