@@ -1,13 +1,17 @@
 @import './variables.scss';
 
 .App {
+    height: 100%;
+
     .wrapper {
+        height: 100%;
         position: relative;
-        overflow: hidden;
+        overflow: auto;
         padding: 0;
     }
 
     .container-fluid {
+        min-height: 100%;
         max-width: $desktop;
         margin: 0 auto;
         padding: {
@@ -15,10 +19,36 @@
             right: 15px !important;
         }
         background-color: lightblue;
-    }
+        // overflow: auto;
 
-    .content {
         display: flex;
-        
+        flex-flow: column;
+        // flex-direction: row;
+        // flex-wrap: wrap;
     }
+    
+    .content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        
+        @media only screen and (min-width: $laptop) {
+            flex-direction: row;
+        }
+    }
+}
+
+.App-header {
+    // width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    margin: 5px 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }

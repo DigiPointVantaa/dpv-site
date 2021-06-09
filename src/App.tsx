@@ -1,12 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import hexmap from './images/hexmap.png';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import logos from './images/Logot_koottuna2.png';
 import './App.scss';
 import Home from './Components/Home';
 import About from './Components/About';
 import NavBar from './Components/NavBar';
 import SideBar from './Components/SideBar';
+import Hexagons from './Components/Hexagons';
+import Contact from './Components/Contact';
 
 class App extends React.Component {
     render() {
@@ -16,16 +17,15 @@ class App extends React.Component {
                     <div className="wrapper">
                         <div className="container-fluid">
                             <header className="App-header">
-                                <Link to="/">
-                                    <img src={hexmap} className="App-logo" alt="Unofficial-logo" />
-                                    <h1>DigiPoint Vantaa</h1>
-                                </Link>
                                 <NavBar />
                             </header>
                             <div className="content">
                                 <Switch>
                                     <Route path="/about">
                                         <About />
+                                    </Route>              
+                                    <Route path="/contact">
+                                        <Contact />
                                     </Route>
                                     <Route path="/">
                                         <Home />
@@ -34,9 +34,10 @@ class App extends React.Component {
                                 <SideBar />
                             </div>
                             <footer>
-                                <img src={logos} alt="logos" className="" />
+                                <img src={logos} alt="logos" className="partner-logos responsive" />
                             </footer>
                         </div>
+                        <Hexagons />
                     </div>
                 </div>
             </Router>

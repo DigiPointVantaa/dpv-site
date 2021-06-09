@@ -1,0 +1,19 @@
+@keyframes spin {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes float-up {
+    from {
+        bottom: -10vh;
+    }
+
+    to {
+        bottom: 110vh;
+    }
+}

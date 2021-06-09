@@ -6,15 +6,19 @@ class SideBar extends React.Component {
     render() {
         return (
             <div className="SideBar">
-                <Timeline
-                    dataSource={{
-                        sourceType: 'profile',
-                        screenName: 'digipointvantaa',
-                    }}
-                    options={{
-                        height: 800,
-                    }}
-                />
+                <div className="twitter-embed">
+                    <Timeline
+                        dataSource={{
+                            sourceType: 'profile',
+                            screenName: 'digipointvantaa',
+                        }}
+                        options={{
+                            width: '320',
+                            height: '560px',
+                        }}
+                    />
+                </div>
+                <embed className="te-embed" src="https://toimistot.te-palvelut.fi/tapahtumat"/>
             </div>
         );
     }
